@@ -796,6 +796,8 @@ public class ClientApp extends javax.swing.JFrame {
                 case "O":this.game_Status.setText("You LOSE! Server WIN!");this.game_Status.setForeground(Color.red);break;
                 default:break;
             }
+        }else if(ticTac.getCounter()>= 9){
+            this.game_Status.setText("It's a DRAW!");this.game_Status.setForeground(Color.orange);
         }
     }
 
