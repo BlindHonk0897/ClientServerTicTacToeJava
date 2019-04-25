@@ -152,42 +152,34 @@ public class TicTacToe {
 
    public void replace(int elem,String player){
        if(oneTwoThree.contains(elem)){
-        System.out.println("oneTwoThree  contains "+ elem);
         this.oneTwoThree.set(oneTwoThree.indexOf(elem), player.toUpperCase());
        }
        
        if(oneFourSeven.contains(elem)){
-           System.out.println("oneFourSeven contains "+elem);
        this.oneFourSeven.set(oneFourSeven.indexOf(elem), player.toUpperCase());
        }
        
        if(oneFiveNine.contains(elem)){
-           System.out.println("oneFiveNine contains "+elem);
        this.oneFiveNine.set(oneFiveNine.indexOf(elem), player.toUpperCase());
        }
        
        if(twoFiveEight.contains(elem)){
-           System.out.println("twoFiveEight contains "+elem);
        this.twoFiveEight.set(twoFiveEight.indexOf(elem), player.toUpperCase());
        }
        
        if(threeSixNine.contains(elem)){
-           System.out.println("It contains 1");
         this.threeSixNine.set(threeSixNine.indexOf(elem), player.toUpperCase());
        }
        
       if(threeFiveSeven.contains(elem)){
-          System.out.println("threeFiveSeven contains "+elem);
        this.threeFiveSeven.set(threeFiveSeven.indexOf(elem), player.toUpperCase());
       }
       
       if(fourFiveSix.contains(elem)){
-        System.out.println("fourFiveSix contains "+elem);
        this.fourFiveSix.set(fourFiveSix.indexOf(elem), player.toUpperCase());
       }
       
       if(sevenEightNine.contains(elem)){
-          System.out.println("sevenEightNine contains "+elem);
         this.sevenEightNine.set(sevenEightNine.indexOf(elem), player.toUpperCase());
       }
    }
