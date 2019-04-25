@@ -25,6 +25,7 @@ public class TicTacToe {
     private ArrayList<Object> threeFiveSeven;
     private ArrayList<Object> fourFiveSix;
     private ArrayList<Object> sevenEightNine;
+    private int counter;
     
     public TicTacToe() {
         this.oneTwoThree = new ArrayList();
@@ -59,6 +60,7 @@ public class TicTacToe {
             sevenEightNine.add(7);
             sevenEightNine.add(8);
             sevenEightNine.add(9);
+        counter = 0;
     }
 
     public ArrayList<Object> getOneTwoThree() {
@@ -91,6 +93,10 @@ public class TicTacToe {
 
     public ArrayList<Object> getSevenEightNine() {
         return sevenEightNine;
+    }
+    
+    public int getCounter() {
+        return counter;
     }
     
    public Object[] checkWin(){
@@ -182,5 +188,7 @@ public class TicTacToe {
       if(sevenEightNine.contains(elem)){
         this.sevenEightNine.set(sevenEightNine.indexOf(elem), player.toUpperCase());
       }
+       
+      counter++;
    }
 }
