@@ -793,6 +793,8 @@ public class ServerApp extends javax.swing.JFrame {
                 default:break;
             }
             
+        }else if(ticTac.getCounter()>= 9){
+            this.game_Status.setText("It's a DRAW!");this.game_Status.setForeground(Color.orange);
         }
     }     
     /**
